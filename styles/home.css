@@ -1,0 +1,8 @@
+.hero {
+    background-image: url("../images/bg4.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, center, center;
+    background-size: cover, cover, auto;
+    height: auto;
+    min-height: 100vh;
+}
