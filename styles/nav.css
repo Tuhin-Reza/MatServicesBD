@@ -13,7 +13,7 @@
 
 .overlay {
     height: 75px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -39,16 +39,22 @@
     padding-left: 3rem;
 }
 
-
-
 .nav__logo a {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+
+/* .nav__logo a {
     text-decoration: none;
     color: #fff;
 }
 
 .nav__logo a:hover {
     color: #FF0000;
-}
+} */
 
 .nav__wrapper {
     height: 75px;
@@ -74,7 +80,7 @@
 }
 
 .nav__wrapper__list__item a {
-    padding: 8px 12px;
+    padding: 10px 12px;
     border-radius: 5px;
     text-decoration: none;
     color: #FFFFFF;
@@ -84,21 +90,12 @@
     transition: background-position 0.7s ease, color 2s ease;
 }
 
-.signin a {
-    background-color: #FF0000;
-    color: #FFFFFF;
-}
-
-
 .nav__wrapper__list__item a:hover {
     background-position: right bottom;
-    /* Moves the gradient to cover with red */
-    color: #FFFFFF;
-    /* Change text color to white on hover */
 }
 
 .nav.highlight .nav__logo a {
-    color: #FF0000;
+    color: #000;
 }
 
 .nav.highlight .nav__wrapper__list__item a {
@@ -323,10 +320,11 @@
 
 /* Media qurey section related to Navbar Section */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:831px) {
     .nav__toggle-btn {
         display: block;
     }
+
     .nav__wrapper {
         width: 100%;
         height: 0;
@@ -348,12 +346,12 @@
         left: 0;
         bottom: 0;
         background-color: #CFA76A;
-        /* same background-color as navbar */
         background-position: center top;
 
     }
 
     .nav__wrapper__list__item {
+        margin-top: 10px;
         width: 100%;
         text-align: center;
     }
@@ -361,10 +359,17 @@
     .nav__wrapper__list__item a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 20px;
         color: #000;
+
+        border-bottom: 2px solid #FF0000;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
     }
+
+
 }
 
 @media screen and (max-width:480px) {
@@ -372,26 +377,3 @@
         font-size: 1.6rem;
     }
 }
-
-/* Medium Devices, Desktops */
-
-@media screen and (max-width:992px) {}
-
-
-/* Small Devices, Tablets */
-
-@media screen and (max-width:768px) {}
-
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 480px) {}
-
-
-/* Custom, iPhone Retina */
-
-@media only screen and (max-width: 320px) {}
-
-
-
-@media only screen and (max-width: 320px) {}

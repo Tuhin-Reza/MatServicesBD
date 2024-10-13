@@ -4,391 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Quicksand", sans-serif;
-            font-size: 62.5%;
-            font-size: 10px;
-        }
-
-
-        /* Navbar section starting below */
-
-        .nav {
-            width: 100%;
-            height: 65px;
-            position: fixed;
-            line-height: 65px;
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            -webkit-transition: all 0.8s ease-in-out;
-            transition: all 0.8s ease-in-out;
-        }
-
-        .highlight {
-            padding: 0;
-            background-color: red;
-        }
-
-        .nav__logo {
-            float: left;
-            width: auto;
-            height: auto;
-            padding-left: 3rem;
-        }
-
-        .nav__logo a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 2rem;
-        }
-
-        .nav__logo a:hover {
-            color: #00E676;
-        }
-
-        .nav__wrapper {
-            height: 65px;
-            float: right;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav__wrapper__list {
-            width: 100%;
-            height: 65px;
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav__wrapper__list__item {
-            width: auto;
-            height: 65px;
-            padding: 0;
-            padding-right: 3rem;
-        }
-
-        .nav__wrapper__list__item a {
-            text-decoration: none;
-            color: #fff;
-            line-height: 65px;
-            font-size: 1.8rem;
-        }
-
-        .nav__wrapper__list__item a:hover {
-            color: #00F676;
-        }
-
-        .nav__toggle-btn {
-            display: none;
-        }
-
-
-        /* Media qurey section related to Navbar Section */
-
-        @media screen and (max-width:768px) {
-            .nav__toggle-btn {
-                display: block;
-            }
-
-            .nav__wrapper {
-                width: 100%;
-                height: 0;
-                overflow: hidden;
-            }
-
-            .nav__wrapper--visible {
-                height: auto;
-                display: none;
-                margin-top: -4px;
-            }
-
-            .nav__wrapper__list {
-                flex-direction: column;
-                width: 100%;
-                height: 100vh;
-                right: 0;
-                left: 0;
-                bottom: 0;
-                background-color: #111;
-                /* same background-color as navbar */
-                background-position: center top;
-            }
-
-            .nav__wrapper__list__item {
-                width: 100%;
-                text-align: right;
-            }
-
-            .nav__wrapper__list__item a {
-                text-align: center;
-                width: 100%;
-                font-size: 3rem;
-                padding: 20px;
-            }
-        }
-
-        @media screen and (max-width:480px) {
-            .nav__logo a {
-                font-size: 1.6rem;
-            }
-        }
-
-
-        /* Animation */
-
-        .nav__toggle-btn {
-            cursor: pointer;
-            width: 30px;
-            height: 25px;
-            margin: auto;
-            position: absolute;
-            right: 30px;
-            top: 0;
-            bottom: 0;
-        }
-
-        .nav__toggle-btn i {
-            background-color: #fff;
-            border-radius: 2px;
-            content: '';
-            display: block;
-            width: 100%;
-            height: 4px;
-        }
-
-        .nav__toggle-btn i:nth-child(1) {
-            -webkit-animation: outT 0.8s backwards;
-            animation: outT 0.8s backwards;
-            -webkit-animation-direction: reverse;
-            animation-direction: reverse;
-        }
-
-        .nav__toggle-btn i:nth-child(2) {
-            margin: 5px 0;
-            -webkit-animation: outM 0.8s backwards;
-            animation: outM 0.8s backwards;
-            -webkit-animation-direction: reverse;
-            animation-direction: reverse;
-        }
-
-        .nav__toggle-btn i:nth-child(3) {
-            -webkit-animation: outBtm 0.8s backwards;
-            animation: outBtm 0.8s backwards;
-            -webkit-animation-direction: reverse;
-            animation-direction: reverse;
-        }
-
-        .nav__toggle-btn.active i:nth-child(1) {
-            -webkit-animation: inT 0.8s forwards;
-            animation: inT 0.8s forwards;
-        }
-
-        .nav__toggle-btn.active i:nth-child(2) {
-            -webkit-animation: inM 0.8s forwards;
-            animation: inM 0.8s forwards;
-        }
-
-        .nav__toggle-btn.active i:nth-child(3) {
-            -webkit-animation: inBtm 0.8s forwards;
-            animation: inBtm 0.8s forwards;
-        }
-
-        @-webkit-keyframes inM {
-            50% {
-                -webkit-transform: rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: rotate(45deg);
-            }
-        }
-
-        @keyframes inM {
-            50% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(45deg);
-            }
-        }
-
-        @-webkit-keyframes outM {
-            50% {
-                -webkit-transform: rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: rotate(45deg);
-            }
-        }
-
-        @keyframes outM {
-            50% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(45deg);
-            }
-        }
-
-        @-webkit-keyframes inT {
-            0% {
-                -webkit-transform: translateY(0px) rotate(0deg);
-            }
-
-            50% {
-                -webkit-transform: translateY(9px) rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: translateY(9px) rotate(135deg);
-            }
-        }
-
-        @keyframes inT {
-            0% {
-                transform: translateY(0px) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(9px) rotate(0deg);
-            }
-
-            100% {
-                transform: translateY(9px) rotate(135deg);
-            }
-        }
-
-        @-webkit-keyframes outT {
-            0% {
-                -webkit-transform: translateY(0px) rotate(0deg);
-            }
-
-            50% {
-                -webkit-transform: translateY(9px) rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: translateY(9px) rotate(135deg);
-            }
-        }
-
-        @keyframes outT {
-            0% {
-                transform: translateY(0px) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(9px) rotate(0deg);
-            }
-
-            100% {
-                transform: translateY(9px) rotate(135deg);
-            }
-        }
-
-        @-webkit-keyframes inBtm {
-            0% {
-                -webkit-transform: translateY(0px) rotate(0deg);
-            }
-
-            50% {
-                -webkit-transform: translateY(-9px) rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: translateY(-9px) rotate(135deg);
-            }
-        }
-
-        @keyframes inBtm {
-            0% {
-                transform: translateY(0px) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(-9px) rotate(0deg);
-            }
-
-            100% {
-                transform: translateY(-9px) rotate(135deg);
-            }
-        }
-
-        @-webkit-keyframes outBtm {
-            0% {
-                -webkit-transform: translateY(0px) rotate(0deg);
-            }
-
-            50% {
-                -webkit-transform: translateY(-9px) rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: translateY(-9px) rotate(135deg);
-            }
-        }
-
-        @keyframes outBtm {
-            0% {
-                transform: translateY(0px) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(-9px) rotate(0deg);
-            }
-
-            100% {
-                transform: translateY(-9px) rotate(135deg);
-            }
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Latest jQuery -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/test2.css">
 </head>
 
 <body>
-    <!-- NAVBAR BLOCK -->
-    <nav class="nav">
-        <div class="nav__logo">
-            <a href="#">LOGO</a>
+    <div class="hero-content">
+
+        <div class="logo-container logo1">
+            <img src="./images/logo.jpg" class="logo">
         </div>
-        <div id="mainListDiv" class="main_list nav__wrapper">
-            <ul class="navlinks nav__wrapper__list">
-                <li class="nav__wrapper__list__item"><a href="#">About</a></li>
-                <li class="nav__wrapper__list__item"><a href="#">Portfolio</a></li>
-                <li class="nav__wrapper__list__item"><a href="#">Services</a></li>
-                <li class="nav__wrapper__list__item"><a href="#">Contact</a></li>
-            </ul>
+        <div class="text-container text1">
+            <span class="text">For Study & Work in Japan</span>
         </div>
-        <span class="navTrigger nav__toggle-btn">
-            <i></i>
-            <i></i>
-            <i></i>
-    </nav>
-    <!-- END OF NAVBAR BLOCK -->
-
-
-
-
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
     </div>
+    <div class="hero-content">
 
-    <script src="script.js"></script>
-    <script src="./js/nav.js"></script>
+        <div class="logo-container logo2" style="display:none;">
+            <img src="./images/logo.jpg" class="logo">
+        </div>
+        <div class="text-container text2" style="display:none;">
+            <span class="text">Your Trusted Partner For Study</span>
+        </div>
+    </div>
+    <div class="hero-content">
+
+        <div class="logo-container logo3" style="display:none;">
+            <img src="./images/logo.jpg" class="logo">
+        </div>
+        <div class="text-container text3" style="display:none;">
+            <span class="text">For Work & Settle in Japan</span>
+        </div>
+    </div>
+    <script src="./scripts/toggleContent.js"></script>
+    <script>
+        // Get the elements for all three parts
+        const logo1 = document.querySelector('.logo1');
+        const text1 = document.querySelector('.text1');
+        const logo2 = document.querySelector('.logo2');
+        const text2 = document.querySelector('.text2');
+        const logo3 = document.querySelector('.logo3');
+        const text3 = document.querySelector('.text3');
+
+        // Variable to keep track of the current visible part (1, 2, or 3)
+        let currentPart = 1;
+
+        // Function to toggle the visibility between three parts
+        function toggleVisibility() {
+            if (currentPart === 1) {
+                // Hide the first part and show the second part
+                logo1.style.display = 'none';
+                text1.style.display = 'none';
+                logo2.style.display = 'inline-block';
+                text2.style.display = 'inline-block';
+                logo3.style.display = 'none';
+                text3.style.display = 'none';
+                currentPart = 2; // Move to the second part
+            } else if (currentPart === 2) {
+                // Hide the second part and show the third part
+                logo1.style.display = 'none';
+                text1.style.display = 'none';
+                logo2.style.display = 'none';
+                text2.style.display = 'none';
+                logo3.style.display = 'inline-block';
+                text3.style.display = 'inline-block';
+                currentPart = 3; // Move to the third part
+            } else {
+                // Hide the third part and show the first part again
+                logo1.style.display = 'inline-block';
+                text1.style.display = 'inline-block';
+                logo2.style.display = 'none';
+                text2.style.display = 'none';
+                logo3.style.display = 'none';
+                text3.style.display = 'none';
+                currentPart = 1; // Loop back to the first part
+            }
+        }
+
+        // Set an interval to toggle visibility every 7 seconds (7000ms)
+        setInterval(toggleVisibility, 7000);
+
+    </script>
+
 </body>
 
 </html>
