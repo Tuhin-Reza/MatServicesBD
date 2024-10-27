@@ -7,34 +7,48 @@
     <meta name="description" content="MAT Services BD: Your gateway to engineering careers in Japan.">
     <title>Mat Services BD</title>
     <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
 
     <link rel="stylesheet" href="./styles/landingPage.css">
     <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="./styles/discussion.css">
+    <!-- <link rel="stylesheet" href="./styles/home.css"> -->
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/bold-point.css">
+    <!-- <link rel="stylesheet" href="./styles/discussion.css"> -->
+    <link rel="stylesheet" href="./styles/affiliates.css">
+    <link rel="stylesheet" href="./styles/whoWeAre.css">
+    <link rel="stylesheet" href="./styles/whyChooseUs.css">
+    <link rel="stylesheet" href="./styles/upcomming.css">
+    <link rel="stylesheet" href="./styles/successStory.css">
+    <link rel="stylesheet" href="./styles/happyMoments.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/resp.css">
-
-
-
 
 </head>
 
 <body id="top">
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav overlay">
             <div class="nav__logo">
-                <a href="#">MAT Japanese Language Academy</a>
+                <a href="./index.html">MAT Japanese Language Academy</a>
             </div>
             <div id="mainListDiv" class="main_list nav__wrapper">
                 <ul class="navlinks nav__wrapper__list">
                     <!-- <li class="nav__wrapper__list__item "><a href="#check">Study in Japan</a></li>
                     <li class="nav__wrapper__list__item "><a href="#">Japanese Language</a></li> -->
-                    <li class="nav__wrapper__list__item "><a href="#discussion">About Us</a></li>
-                    <li class="nav__wrapper__list__item "><a href="#">Blog</a></li>
-                    <li class="nav__wrapper__list__item "><a href="#">Services</a></li>
-                    <li class="nav__wrapper__list__item "><a href="#">Contact Us</a></li>
-                    <li class="nav__wrapper__list__item signin"><a href="#">Signin</a></li>
+                    <li class="nav__wrapper__list__item "><a href="./about_us.html">About Us</a></li>
+                    <li class="nav__wrapper__list__item "><a href="./blog.html">Blog</a></li>
+                    <li class="nav__wrapper__list__item "><a href="./services.html">Services</a></li>
+                    <li class="nav__wrapper__list__item "><a href="./contact.html">Contact Us</a></li>
+                    <li class="nav__wrapper__list__item signin"><a href="./signin.html">Signin</a></li>
                 </ul>
             </div>
             <span class="navTrigger nav__toggle-btn">
@@ -47,7 +61,7 @@
 
     <main>
         <article>
-            <section class="hero" id="home">
+            <!-- <section class="hero" id="home">
                 <div class="container">
                     <div class="hero-content">
                         <div class="logo-container logo1">
@@ -76,11 +90,146 @@
                     </div>
                 </div>
                 </div>
+            </section> -->
+
+            <section class="heropanel--video">
+                <video autoplay muted loop playsinline poster="./images/poster-image.png">
+                    <source src="./images/vid2 (2).mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div class="video-overlay"></div>
+                <div class="heropanel__content">
+                    <h1><a href="#header" rel="home"><span class="hero-title">MAT</span> Services BD</a></h1>
+                    <p class="hero-dis">For Study & work in Japan</p>
+                </div>
             </section>
 
-            <section class="discussion" id="discussion">
+            <section class="bold-point" id="bold-point">
+                <div class="bold-point-row">
+                    <div class="bold-point-block">
+                        <div class="hovicon effect-1 sub-a">
+                            <a href="./studyinJapan.html">
+                                <b>
+                                    <i class="fas fa-graduation-cap discussion-icon"></i>
+                                </b>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bold-point-block">
+                        <div class="hovicon effect-1 sub-a">
+                            <a href="./languageCourse.html">
+                                <span class="discussion-icon language-icon">日本語</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bold-point-block">
+                        <div class="hovicon effect-1 sub-a">
+                            <a href="./workinJapan.html">
+                                <b>
+                                    <i class="fa fontawesome-icon fa-briefcase circle-yes discussion-icon"></i>
+                                </b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="affiliates-our-affiliates" id="affiliates-our-affiliates">
+                <div class="affiliates-scroller" data-speed="fast">
+                    <ul class="affiliates-tag-list affiliates-scroller__inner">
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate1.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate2.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate3.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img affiliates-img-3">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate4.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate5.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate6.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate7.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate8.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate9.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate10.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate11.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate12.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate13.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kudan-japanese-school.com/blog/onlinebusinessjapanese.php">
+                                <img src="./images/affiliates/affiliate15.jpg" alt="Kudan Japanese School"
+                                    class="affiliates-aff-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- <section class="discussion" id="discussion">
                 <div class="discussion-area" id="discussion-area">
-                    <!-- Card: study -->
+                 
                     <div class="discussion-section">
                         <div class="discussion-card">
                             <div class="discussion-flip-card">
@@ -100,7 +249,7 @@
 
                                         <div class="discussion-card-front__bt">
                                             <p
-                                                class="discussion-card-front__text-view discussion-card-front__text-view--study">
+                                                class="discussion-card-front__text-view discussion-card-btn discussion-card-front__text-view--study">
                                                 View me
                                             </p>
                                         </div>
@@ -129,7 +278,7 @@
                         </div>
                     </div>
 
-                    <!-- Card: language -->
+               
                     <div class="discussion-section">
                         <div class="discussion-card">
                             <div class="discussion-flip-card">
@@ -180,7 +329,7 @@
                         </div>
                     </div>
 
-                    <!-- Card: work -->
+                  
                     <div class="discussion-section">
                         <div class="discussion-card">
                             <div class="discussion-flip-card">
@@ -234,168 +383,374 @@
 
 
                 </div>
+            </section> -->
+
+            <section class="who-we-are" id="who-we-are">
+                <div class="who-container">
+                    <!-- Left Side -->
+                    <div class="left-side">
+                        <button class="service-list-btn" onclick="window.location.href='./services.html';">
+                            Service List
+                        </button>
+                        <h1>So <span class="Who">Who</span> We Are</h1>
+                        <p>MAT Services BD is a gateway for aspiring students and professionals seeking study and work
+                            opportunities in Japan. Owned and operated by Japanese nationals, we specialize in Japanese
+                            language
+                            training, admission support, and job placement for Bangladeshi students and engineers. Our
+                            team
+                            includes experts with decades of experience in Japan, and we are affiliated with top
+                            institutions to
+                            ensure smooth transitions and successful careers in Japan.
+                        </p>
+                        <div class="profile-container">
+                            <div class="ceo-profile">
+                                <div>
+                                    <img src="./images/logo.jpg" alt="">
+                                </div>
+                                <div class="ceo-profile-name">
+                                    <ul>
+                                        <li class="ceo-name">Tanjina Yasminn Chowdhury</li>
+                                        <li class="ceo-title">CEO</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="profile-container-btn">
+                                <button class="more-details" onclick="window.location.href='./about_us.html';">
+                                    More Details
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Side (Services Area) -->
+                    <div class="services-area">
+                        <div class="row">
+                            <div class="single-serviecs-block">
+                                <i class="fas fa-language"></i>
+                                <h3 class="learn-more">
+                                    <a href="./languageCourse.html">
+                                        Learn More
+                                    </a>
+                                </h3>
+                                <p>LANGUAGE TRAINING IN BD.</p>
+                            </div>
+                            <div class="single-serviecs-block">
+                                <i class="fas fa-passport"></i> <!-- Font Awesome Passport icon -->
+
+                                <h3><a href="./services.html">Learn More</a></h3>
+                                <p>ADMISSION SUPPORT.</p>
+                            </div>
+                            <div class="single-serviecs-block">
+                                <i class="fas fa-handshake"></i> <!-- Font Awesome Handshake icon -->
+
+                                <h3><a href="./services.html">Learn More</a></h3>
+                                <p>FOR JOB PLACEMENT.</p>
+                            </div>
+                            <div class="single-serviecs-block">
+                                <i class="fas fa-user-tie"></i> <!-- Font Awesome User Tie icon -->
+
+                                <h3><a href="./services.html">Learn More</a></h3>
+                                <p>CAREER COUNSELLING.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </section>
+
+            <section id="appointment">
+                <div class="appointment-container">
+                    <div class="appointment-call">
+                        <img src="./images/phone-call.png" alt="Phone Call">
+                        <div>
+                            <h5>GET A FREE CONSULTATION</h5>
+                            <h3>+880 19 9488 4302
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="appointment-description">Schedule your consultation with MAT Services BD today to
+                        explore
+                        opportunities for studying and working in Japan. Let us guide you on your journey!</div>
+                    <div class="appointment-btn ">
+                        <button>MAKE APPOINTMENT</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="why-choose-us-container">
+                <div class="why-choose-us-left why-choose-us-floating">
+                    <img src="./images/whyChooseUs.jpg" alt="Why Choose Us Image">
+                </div>
+
+                <div class="why-choose-us-right">
+                    <div class='why-choose-us__heading'>
+                        <h4>Why <span class="choose-us">Choose</span> Us</h4>
+                    </div>
+
+                    <div class='why-choose-us__content'>
+                        <div class='why-choose-us-icon'><i class="far fa-check-circle"></i></div>
+                        <div>
+                            <h5>Owned and operated by Japanese Nationals.</h5>
+                        </div>
+                    </div>
+
+                    <div class='why-choose-us__content'>
+                        <div class='why-choose-us-icon'><i class="far fa-check-circle"></i></div>
+                        <div>
+                            <h5>We are affiliated with A Category institutes in Japan.</h5>
+                        </div>
+                    </div>
+
+                    <div class='why-choose-us__content'>
+                        <div class='why-choose-us-icon'><i class="far fa-check-circle"></i></div>
+                        <div>
+                            <h5>Owners are experienced for decades in the employment of foreign nationals in Japan.</h5>
+                        </div>
+                    </div>
+
+                    <div class='why-choose-us__content'>
+                        <div class='why-choose-us-icon'><i class="far fa-check-circle"></i></div>
+                        <div>
+                            <h5>Committed to preparing accurate and flawless documents for schools and immigration
+                                authority.
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class='why-choose-us__content'>
+                        <div class='why-choose-us-icon'><i class="far fa-check-circle"></i></div>
+                        <div>
+                            <h5>All certificates and documents are translated into Japanese by ethnic Japanese
+                                personnel.</h5>
+                        </div>
+                    </div>
+
+                    <div class='why-choose-us__content'>
+                        <div class='why-choose-us-icon'><i class="far fa-check-circle"></i></div>
+                        <div>
+                            <h5>We practice Japanese etiquette and culture regularly.</h5>
+                        </div>
+                    </div>
+
+                    <div class='why-choose-us__content'>
+                        <div class='why-choose-us-icon'><i class="far fa-check-circle"></i></div>
+                        <div>
+                            <h5>We support students during the initial days of their living in Japan.</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="upcomming">
+                <div class="upcoming-left">
+                    <h2 class="box-title">Upcoming Events</h2>
+                    <div class="upcoming-left-box">
+                        <diV class="upcomming-events-container">
+                            <div class="upcoming-title">
+                                <span>Study Work &</span>
+                                <span>Settle in Japan</span>
+                            </div>
+                            <div class="date-time"><span>12 April 2017, </span><span>4:00pm</span></div>
+
+                            <div class="location">Location</div>
+                        </diV>
+                    </div>
+                </div>
+                <div class="upcoming-right">
+                    <h2 class="box-title">Upcoming Batches</h2>
+                    <div class="upcoming-right-box">
+                        <diV class="upcomming-batches-container">
+                            <div class="upcoming-title">
+                                <span>Basic Japanese</span>
+                                <span>Language</span>
+                            </div>
+                            <div class="date-time">
+                                <span>12 April 2017,</span>
+                                <span>4:00pm</span>
+                            </div>
+                            <div class="location"> Medium </div>
+                        </diV>
+                    </div>
+                </div>
+            </section>
+
+            <section class="successStroy" id="successStroy">
+                <h1 class="successStroy-title">Our <span class="success">Success</span> Stroy</h1>
+                <div class="successStroy-slider-container">
+                    <div class="successStroy-slider-item">
+                        <iframe src="https://www.youtube.com/embed/dDfoWMEB89U"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="successStroy-slider-item">
+                        <iframe src="https://www.youtube.com/embed/W75OJb6SQv4"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="successStroy-slider-item">
+                        <iframe src="https://www.youtube.com/embed/dDfoWMEB89U"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="successStroy-slider-item">
+                        <iframe src="https://www.youtube.com/embed/dDfoWMEB89U"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="successStroy-slider-item">
+                        <iframe src="https://www.youtube.com/embed/dDfoWMEB89U"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="happyMoments" id="happyMoments">
+                <h1 class="happyMoments-title">Happy Moments with <span class="mat">MAT</span></h1>
+                <div class="happyMoments-slider-container">
+                    <div class="slider-item">
+                        <figure class="bg-image">
+                            <img src="./images/H_M-1.jpg" alt="">
+                        </figure>
+                        <figcaption>
+                            <span class="student-name">Student Name</span><br>
+                            <span class="university-name">University Name</span>
+                        </figcaption>
+                    </div>
+
+                    <div class="slider-item">
+                        <figure class="bg-image"><img src="./images/H_M-2.jpg" alt=""></figure>
+                        <figcaption>
+                            <span class="student-name">Student Name</span><br>
+                            <span class="university-name">University Name</span>
+                        </figcaption>
+                    </div>
+
+                    <div class="slider-item">
+                        <figure class="bg-image"><img src="./images/H_M-3.jpg" alt=""></figure>
+                        <figcaption>
+                            <span class="student-name">Student Name</span><br>
+                            <span class="university-name">University Name</span>
+                        </figcaption>
+                    </div>
+
+                    <div class="slider-item">
+                        <figure class="bg-image"><img src="./images/H_M-4.jpg" alt=""></figure>
+                        <figcaption>
+                            <span class="student-name">Student Name</span><br>
+                            <span class="university-name">University Name</span>
+                        </figcaption>
+                    </div>
+
+                    <div class="slider-item">
+                        <figure class="bg-image"><img src="./images/H_M-5.jpg" alt=""></figure>
+                        <figcaption>
+                            <span class="student-name">Student Name</span><br>
+                            <span class="university-name">University Name</span>
+                        </figcaption>
+                    </div>
+                    <div class="slider-item">
+                        <figure class="bg-image"><img src="./images/output.jpg" alt=""></figure>
+                        <figcaption>
+                            <span class="student-name">Student Name</span><br>
+                            <span class="university-name">University Name</span>
+                        </figcaption>
+                    </div>
+                    <div class="slider-item">
+                        <figure class="bg-image"><img src="./images/output (1).jpg" alt=""></figure>
+                        <figcaption>
+                            <span class="student-name">Student Name</span><br>
+                            <span class="university-name">University Name</span>
+                        </figcaption>
+                    </div>
+                    <div class="slider-item">
+                        <figure class="bg-image"><img src="./images/output (2).jpg" alt=""></figure>
+                        <figcaption>
+                            <span class="student-name">Student Name</span><br>
+                            <span class="university-name">University Name</span>
+                        </figcaption>
+                    </div>
+                    <div class="slider-item">
+                        <figure class="bg-image"><img src="./images/output (3).jpg" alt=""></figure>
+                        <figcaption>
+                            <span class="student-name">Student Name</span><br>
+                            <span class="university-name">University Name</span>
+                        </figcaption>
+                    </div>
+                </div>
+            </section>
+
+
+
 
 
         </article>
     </main>
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo-container">
+                    <img src="./images/logo.jpg" class="footer-logo">
+                    <h3><span class="mat">MAT</span> Services BD</h3>
+                </div>
+                <p class="logo-content">Best Japanese Language Institute in Dhaka, Bangladesh that assists students in
+                    higher study in
+                    Japan and processes Japanese Visa.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Study Link</h3>
+                <p><i class="fas fa-map-marker-alt"></i> House-620-22, Road 09, Mirpur DOHS, Dhaka 1216</p>
+                <p><i class="fas fa-phone"></i> +880 19 9488 4302</p>
+                <p><i class="fas fa-envelope"></i> matservicesbd@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Find Us Online</h3>
+                <p>Please follow our social media links to get hourly updates on our organization’s current affairs,
+                    activities, and news.</p>
+                <p>
+                    <a href="https://web.facebook.com/MATServicesBDnew" class="social-icon"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/matservicesbd/posts/?feedView=all" class="social-icon"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@Md.AsifurRahman-xh5ze" class="social-icon"><i
+                            class="fab fa-youtube"></i></a>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-bottom-left">
+                <div class="copyright">
+                    <a href="#">MAT Services BD</a> &copy; 2024 All Rights Reserved
+                </div>
+            </div>
+            <div class="footer-bottom-right">
+                <ul class="footer-nav">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div id="check">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias accusantium impedit vitae omnis
-            incidunt atque magni quaerat amet ratione nam, quibusdam id est possimus a rerum iure officiis repellendus.
-            Vitae, nobis? Reprehenderit molestiae tempore aliquam minima qui, nobis repudiandae illum mollitia dolore
-            assumenda! Aliquam quaerat tempora repellendus optio, iure quam laudantium incidunt nam amet tenetur, aut
-            ad. Odio sint ea dolor architecto autem perspiciatis! Corporis ipsam quas aspernatur iste dignissimos quam
-            tempora doloribus rem quisquam laboriosam pariatur a fugiat suscipit officia sapiente, sequi omnis dicta,
-            accusamus ipsa aliquam placeat quia dolores vel odio. Dolor accusantium possimus modi, dolores corrupti ab
-            asperiores natus, dolore aperiam nemo inventore nihil velit deleniti pariatur consequatur labore quam magnam
-            eum culpa earum. Animi incidunt rerum ea necessitatibus atque pariatur laborum fugiat est odit distinctio,
-            provident, aperiam tempora, facere similique asperiores doloribus porro nulla dolorem? Voluptatem, quidem,
-            iure aliquam accusamus, optio hic ad iusto pariatur minus omnis consectetur perferendis maxime? Sapiente ea
-            nesciunt, repellat libero deleniti ex voluptate ut a corrupti optio, officiis explicabo debitis error quos
-            possimus officia nemo quod rem quo modi. Magni doloremque cupiditate dolor nemo itaque veritatis maxime rem
-            accusamus modi pariatur repellat error libero quae deserunt nobis tempora autem, laboriosam adipisci? Ullam,
-            nostrum accusantium, eligendi dignissimos odit officiis, exercitationem ut dolor dolorem distinctio iusto
-            earum eveniet harum ipsam quo quam itaque. Nisi ab dicta laboriosam amet voluptatibus? Repellendus tempora
-            vel eius sint inventore velit! Alias, excepturi voluptatibus eligendi magni recusandae officia assumenda
-            sapiente totam voluptatum quaerat qui earum. Reprehenderit possimus iusto veniam illo, voluptatum nemo nobis
-            ullam similique atque minima omnis amet eius rem enim voluptatibus deleniti, ex qui, neque eveniet explicabo
-            sequi. Magnam accusamus quam modi sint unde saepe nesciunt expedita quas incidunt voluptate fugiat quo
-            laboriosam dignissimos a qui illum eos blanditiis sequi voluptas, cupiditate quod animi praesentium adipisci
-            quidem? Ab accusamus repellendus porro similique animi explicabo aspernatur exercitationem, libero
-            perferendis quia asperiores quas, nisi in illo accusantium autem labore obcaecati officiis. Unde earum
-            obcaecati facere vero praesentium. Ullam amet architecto exercitationem. Architecto sit vitae at nulla,
-            similique, et atque laboriosam repellendus alias quo corrupti sunt odit, amet quasi quia? Quaerat earum
-            fugiat, quibusdam minus soluta itaque nulla ut sed eligendi minima aspernatur nisi nemo neque illo excepturi
-            natus similique harum ducimus! Voluptate pariatur impedit quisquam non enim ducimus neque quos ea molestias
-            consequuntur numquam sit, in libero aperiam possimus minus sapiente iste corporis quia dolores illum! Fugit
-            pariatur dolorum eligendi numquam officia quo, aspernatur eum maiores! Doloribus dolores nam, enim incidunt
-            hic optio omnis recusandae ducimus natus neque assumenda, explicabo ad, commodi minus! Laborum est nesciunt
-            quos accusantium. Odio quae ab optio soluta quidem alias molestiae totam labore delectus quasi magnam esse
-            laboriosam rem, voluptates odit eligendi iusto ipsum animi quisquam impedit reiciendis similique neque
-            incidunt! Laudantium, in! Saepe praesentium tempore laboriosam nulla quia voluptate tenetur quod! Nostrum
-            unde at explicabo, maxime possimus officia quisquam soluta velit quaerat ea. Possimus accusamus officia
-            dolorem ea maiores, repellat praesentium fugiat optio dolore nam unde quae voluptatem ullam ad omnis
-            perferendis aliquid culpa quaerat sit hic perspiciatis. Eos ut eveniet sunt aliquam nemo explicabo dolorum
-            fugit quibusdam atque, nihil asperiores laudantium porro culpa amet consequuntur ipsa, sequi beatae illo
-            aliquid odit deserunt, modi voluptatem! Quae, fugit quo. Quia commodi perferendis itaque deleniti dicta
-            cumque eius voluptates quaerat laudantium qui quidem sunt temporibus quasi excepturi quod incidunt, animi
-            tempora, molestias id est reprehenderit alias exercitationem. Tempora tempore ullam, debitis ad modi
-            consequuntur et sint rem odit provident architecto quae sunt natus. Eaque amet dolorem consequatur
-            inventore, veniam ullam sit consequuntur odit assumenda fugiat. Illum nam quia sit. Corrupti doloremque
-            ipsum velit at blanditiis quidem? Omnis atque eum nihil voluptate possimus! Perferendis totam quisquam
-            quidem consectetur ipsa, nesciunt, error odio provident inventore, laudantium assumenda numquam possimus
-            amet animi aperiam perspiciatis dicta? Facilis aliquam reiciendis deserunt! Soluta neque, expedita hic quia
-            dicta delectus rerum cumque vitae deleniti eveniet consectetur omnis architecto enim veritatis velit
-            nesciunt obcaecati itaque, cupiditate vero voluptas quam tempore quos. Molestias dignissimos error
-            cupiditate veritatis sapiente aliquam rem obcaecati iste est nemo vitae nostrum, perferendis quas deserunt
-            ad quis culpa temporibus quo consequatur? At repudiandae deserunt repellat qui debitis officia odit expedita
-            hic numquam ipsam explicabo molestiae necessitatibus ad incidunt consectetur quia, quisquam ullam doloremque
-            magnam architecto. Culpa, amet ab magnam repellat aliquam officiis ad reprehenderit vel enim qui dicta
-            perspiciatis nulla saepe accusantium quis rem a exercitationem adipisci doloribus labore earum sequi iste.
-            Reiciendis quos accusantium tempora molestias fugiat at officia magni repellat. Corporis temporibus minima
-            iste culpa nulla voluptate repellat vero ad obcaecati, nihil explicabo nemo! Mollitia qui libero explicabo.
-            Porro mollitia maiores odit deleniti non praesentium sapiente atque quod alias voluptatem aliquam officia
-            nobis eligendi aperiam aspernatur, ab reprehenderit, magnam recusandae asperiores molestiae. Quas sunt vitae
-            provident in autem voluptas unde molestias voluptatem sapiente, deserunt architecto dicta tenetur eum
-            tempore, illo, accusantium maxime. Nesciunt fugiat nulla repellat quo, dolorem officiis corrupti illo.
-            Quibusdam tempore aperiam veniam iure deleniti? Ut non est quis iusto quod? Ea ipsam alias hic doloremque
-            blanditiis veritatis velit cupiditate ad recusandae quia quas esse quae cumque rerum magnam iusto nemo quod
-            nisi eum odio, dolores quos ipsum. Neque, vero! Qui tenetur recusandae est. Iure, voluptatem? Nobis earum
-            qui ratione neque eveniet natus corrupti eum fuga suscipit aspernatur harum sequi, odio vero magni, iste
-            totam. Velit tempora quibusdam numquam fugiat facere laborum. Itaque quidem, magni nisi qui iste perferendis
-            deleniti vero mollitia impedit eveniet doloribus ullam nulla et sed omnis saepe laboriosam accusantium
-            placeat voluptatem! Ex sequi, excepturi libero repellendus fuga ad quo vitae nobis recusandae, delectus
-            perspiciatis necessitatibus perferendis dignissimos sint reiciendis ab amet architecto, maxime voluptatum
-            doloremque. Accusamus ab enim iusto dolor, voluptate ut obcaecati quos quam veniam sint perspiciatis? Velit
-            nemo, maiores eligendi alias dolore voluptatem et molestias tempore! Eveniet quisquam architecto doloremque
-            cumque adipisci rem odit modi ea dolore impedit, alias numquam? Alias minus facilis animi expedita veritatis
-            accusamus provident voluptatem perferendis. Minus neque consequuntur rem earum illum doloremque consequatur
-            optio inventore nesciunt sit. Repellendus cupiditate esse veritatis commodi excepturi facilis laborum ad
-            repudiandae velit ratione quod, alias maiores soluta adipisci! Hic neque quisquam accusantium dolore
-            voluptatum eveniet dicta optio amet cumque, odio ducimus repellendus! Quod dignissimos laudantium modi? Quos
-            saepe non voluptates, sapiente nobis molestias. Praesentium, vitae cumque adipisci consequuntur consectetur
-            ducimus ipsam architecto officia sit voluptatem, magnam voluptates quas velit? Facilis natus magnam
-            explicabo, laborum laboriosam assumenda tempora quis, voluptas earum veniam id modi rerum voluptates velit.
-            Quia nulla expedita culpa inventore quam, nisi, laboriosam, doloribus consequuntur dolores voluptas dolorum
-            nam? Dolor aliquam, voluptatum doloremque eos earum atque itaque. Architecto dolorum accusantium, temporibus
-            sed non modi illum autem recusandae aliquid nam cupiditate blanditiis earum saepe omnis debitis aperiam
-            voluptas commodi minus officiis molestias ex esse voluptates. Quam perspiciatis ex error veritatis fugit
-            maiores magni earum? Deserunt, magnam amet repellat ipsum dolorum, quo cum corporis quas officiis
-            aspernatur, voluptatibus id neque! Quidem pariatur eligendi placeat quis omnis nam vel esse ratione, ut
-            cupiditate autem mollitia officia id, consequuntur quod odit neque nostrum optio, exercitationem ipsum
-            numquam! Temporibus vitae aliquid repellendus nemo dolore odio. Perferendis iure ratione non aspernatur
-            laudantium eveniet animi sint temporibus distinctio repudiandae nam necessitatibus est, dolorum tempora
-            deserunt natus debitis dolorem esse nemo cupiditate alias praesentium unde voluptatum quasi? Laboriosam ipsa
-            incidunt blanditiis, quasi ducimus rerum assumenda maxime? Corrupti sit cum voluptas! Dolorem amet aut
-            suscipit, et corrupti reiciendis doloremque, alias totam, maiores quasi exercitationem voluptatem dolor
-            officiis atque laborum praesentium dignissimos! Harum architecto, illo excepturi nam ad magnam molestias
-            cupiditate voluptatem voluptatum distinctio quos soluta doloremque vel ullam ex consequatur maxime
-            blanditiis hic. Illo exercitationem sed ipsum unde nulla obcaecati provident? Eligendi eum mollitia
-            repudiandae inventore nisi odio incidunt. Aliquam, veniam quaerat? Fugit officia voluptas maxime
-            reprehenderit at amet fuga? Id, voluptatibus eos. Tempora deserunt itaque sequi eos, placeat laborum ut sunt
-            sapiente necessitatibus magni aperiam quasi voluptas numquam fuga enim optio natus molestiae a quibusdam.
-            Voluptatum nemo laboriosam odit ipsum dolores assumenda itaque modi voluptates! Quis, ut explicabo nemo
-            corporis laboriosam aspernatur officiis molestiae ipsa blanditiis omnis. Dolores distinctio illo fugiat
-            quisquam ipsam impedit quae temporibus? Quas eaque nemo ex itaque illo ullam odit qui iste doloremque,
-            molestiae rem placeat quaerat ad adipisci dolorum ea? Autem dignissimos, nesciunt laudantium debitis dolorum
-            alias mollitia rerum quod ut nihil magni expedita consequatur placeat voluptatem sequi aliquid corrupti
-            aspernatur reiciendis sapiente exercitationem? Eligendi doloremque et exercitationem a, est accusantium
-            iusto debitis officia odit illo at aliquid cum porro! Cum iusto, voluptate distinctio modi quas facere sunt.
-            Atque, unde dignissimos dolore autem quam quod vitae, quaerat in cum perferendis, ipsum hic tenetur sapiente
-            fugiat deserunt error et sequi voluptate delectus sed tempora! Suscipit, neque sed. Commodi ducimus quas in
-            totam cum. Ab, magnam laboriosam exercitationem nisi aut commodi! Similique quod amet placeat dolor veniam!
-            Vero culpa amet est beatae ex excepturi dicta possimus odit? Non porro itaque quo nemo suscipit natus ullam
-            quibusdam, sapiente eligendi ducimus maiores iste cum, perspiciatis accusantium similique aliquid sequi
-            doloremque nesciunt mollitia eaque deserunt nulla magni? Tempore, velit totam expedita, nobis iusto rem
-            consequatur possimus illum explicabo vel nam ipsum similique magnam! Consequatur nihil officia illo
-            voluptates voluptatibus facilis, fuga, officiis cupiditate sunt placeat iste vitae beatae molestiae ratione
-            eos, repellat voluptatum nam dolorum reiciendis illum magni. Iure porro sunt ut iusto harum beatae quo, esse
-            placeat velit nostrum, error recusandae assumenda! Reiciendis nesciunt, inventore consectetur nihil
-            repellendus, nisi velit magni quam natus voluptatum architecto, voluptates ducimus laudantium debitis. Sint,
-            natus! At, officiis? Dolorem reprehenderit accusantium praesentium quam assumenda laborum impedit rem
-            aspernatur! Magni aut iusto quod provident ipsam ut reiciendis, vero deleniti sunt animi! Recusandae, eius?
-            Eum odit officia eos placeat molestias, aliquid sed, ipsam alias perspiciatis, nulla maxime debitis
-            voluptate architecto nam sunt tempore laborum modi! Animi, numquam expedita, nam facilis perferendis
-            delectus temporibus dolorum eveniet provident laborum magni cum sunt porro quae officiis, quod ratione
-            necessitatibus laboriosam error minus enim. Est necessitatibus id ipsum maxime dolore voluptas similique
-            assumenda laboriosam eum quisquam rem nobis quas, beatae autem itaque. Ex optio commodi amet deserunt.
-            Repellendus fugit itaque vero doloremque facilis, quis laborum corporis? Repellendus itaque, reprehenderit
-            quos vel quo illo provident, blanditiis eum officiis nulla magni rem, voluptatum explicabo alias cumque
-            nesciunt est voluptates inventore at facilis recusandae! Fugiat sit laboriosam natus minus maxime, cum porro
-            impedit, ea consectetur corrupti assumenda magnam ex? Eum ratione quaerat quod, reprehenderit alias quam
-            repellat libero facilis cupiditate. Molestias tempora quod deleniti rem quaerat aperiam nemo illum, neque
-            nihil, earum culpa aliquam, sapiente doloribus ut nam rerum. Harum deleniti tempora, earum aperiam
-            accusantium dolores voluptatem modi omnis facere numquam minus unde veniam quia ab similique et voluptatibus
-            soluta voluptas beatae doloremque cumque asperiores fugiat. Quos nam nostrum magni, vero velit pariatur.
-            Laboriosam officiis dolores perferendis placeat vel ea doloribus eligendi, quisquam saepe ratione
-            accusantium nesciunt exercitationem voluptate commodi deleniti? Tempora molestiae dicta dignissimos repellat
-            ex quidem ab consequatur provident iure, magni porro necessitatibus, quam laborum molestias saepe placeat
-            magnam ullam ad ratione, illo iste. Corporis ipsam laudantium iure aliquid, tempora corrupti officia dolorem
-            cum libero veniam eos distinctio consequuntur quod nobis rerum? Blanditiis veritatis, soluta ipsa aut modi
-            obcaecati. Eos similique vitae voluptates ratione cumque, non facilis atque cum libero praesentium
-            molestiae. Quis eveniet autem incidunt ipsa dolorum reprehenderit veritatis voluptate. Obcaecati mollitia
-            nihil a, blanditiis quasi recusandae tempore consectetur deleniti ut itaque distinctio repellat cupiditate
-            quia dolores ullam et soluta id, adipisci earum ad atque assumenda quos pariatur modi? Voluptates mollitia
-            voluptatum itaque harum! Id culpa ipsa inventore quibusdam dolore voluptatibus, debitis eveniet cumque
-            minima repellendus, delectus recusandae optio! Harum sit officiis quam ipsa, possimus doloremque nobis
-            cumque aperiam quaerat eos inventore dolores iusto! Exercitationem debitis reprehenderit dolorem eos
-            architecto rem obcaecati nemo dolor, ut, fugiat inventore quas laboriosam. Quaerat error dolor recusandae
-            esse repudiandae modi perferendis dolore eligendi ad neque dolores laudantium odit, voluptatem dicta
-            possimus dignissimos quam, aperiam incidunt hic itaque cumque deserunt maxime! Iure at sunt autem reiciendis
-            est fuga et eius facere explicabo! Blanditiis eum nesciunt laborum obcaecati. Eius ab consectetur error
-            cumque ducimus dolorum corrupti deserunt laboriosam id veniam.</p>
-    </div>
+
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
     <script src="./js/nav.js"></script>
     <script src="./js/home.js"></script>
+    <script src="./js/happyMoments.js"></script>
+    <script src="./js/successStroy.js"></script>
+    <script src="./js/affiliates.js"></script>
+
 </body>
 
 </html>

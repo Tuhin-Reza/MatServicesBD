@@ -4,165 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Section</title>
     <link rel="stylesheet" href="./styles/test2.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <section class="discussion" id="discussion">
-        <div class="discussion-area" id="discussion-area">
-            <!-- Card: Camping -->
-            <div class="discussion-section">
-                <div class="discussion-card">
-                    <div class="discussion-flip-card">
-                        <div class="discussion-flip-card__container">
-                            <div class="discussion-card-front">
-                                <div class="discussion-card-front__tp discussion-card-front__tp--camping">
-                                    <i style="      
-                                            color:#FF0000;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;" class="fas fa-graduation-cap discussion-icon"></i>
-                                    <h2 class="discussion-card-front__heading">
-                                        STUDY IN JAPAN
-                                    </h2>
-                                </div>
-
-                                <div class="discussion-card-front__bt">
-                                    <p
-                                        class="discussion-card-front__text-view discussion-card-front__text-view--camping">
-                                        View me
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="discussion-card-back">
-                                <video class="video__container" autoplay muted loop>
-                                    <source class="video__media"
-                                        src="https://player.vimeo.com/external/180185916.sd.mp4?s=c893e4770f87b00e0d6b5a1de138b01b02aaa085&profile_id=164&oauth2_token_id=57447761"
-                                        type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--camping">
-                                For nature lovers
-                            </h3>
-                            <p class="inside-page__text">
-                                Get your boots on for some hiking and explore all the beautiful scenery of nature!
-                            </p>
-                            <a href="#" class="inside-page__btn inside-page__btn--camping">View deals</a>
-                        </div>
-                    </div>
+    <section class="course_cards-container">
+        <!-- Card for Level N1 -->
+        <div class="course_card" data-level="N1">
+            <div class="course_leftSide">
+                <label>COURSE</label>
+                <h3>Japanese Level N1</h3>
+                <div class="course_btn" onclick="openPopup('N1')">
+                    <a>View all chapters</a>
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9 8.5L1.74631 16L1 15.2283L7.50739 8.5L1 1.77172L1.74631 1L9 8.5Z" fill="white"
+                            stroke="#ADA5FF" />
+                    </svg>
                 </div>
             </div>
-
-            <!-- Card: Ski -->
-            <div class="discussion-section">
-                <div class="discussion-card">
-                    <div class="discussion-flip-card">
-                        <div class="discussion-flip-card__container">
-                            <div class="discussion-card-front">
-                                <div class="discussion-card-front__tp discussion-card-front__tp--ski">
-                                    <span style="      
-                                            color:#FF0000;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;" class="discussion-icon ">あ</span>
-                                    <h2 class="discussion-card-front__heading">
-                                        JAPANESE LANGUAGE
-                                    </h2>
-
-                                </div>
-
-                                <div class="discussion-card-front__bt">
-                                    <p class="discussion-card-front__text-view discussion-card-front__text-view--ski">
-                                        View me
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="discussion-card-back">
-                                <video class="video__container" autoplay muted loop>
-                                    <source class="video__media"
-                                        src="https://player.vimeo.com/external/195913085.sd.mp4?s=7c12f7a83de62a8900fd2ae049297070b9bc8a54&profile_id=164&oauth2_token_id=574477611"
-                                        type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--ski">
-                                For snow lovers
-                            </h3>
-                            <p class="inside-page__text">
-                                Love snow? Why not take up exciting ski-in sessions and hit the slope?
-                            </p>
-                            <a href="#" class="inside-page__btn inside-page__btn--ski">View deals</a>
-                        </div>
-                    </div>
+            <div class="course_rightSide">
+                <div class="course_title">
+                    <h3>Advanced Grammar & Vocabulary</h3>
+                </div>
+                <div class="course_features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Tools, templates, and book suggestions</li>
+                        <li><i class="fas fa-check"></i> Online and Offline Support</li>
+                        <li><i class="fas fa-check"></i> Recorded video lessons</li>
+                        <li><i class="fas fa-check"></i> Assessment and Certificate</li>
+                        <li><i class="fas fa-check"></i> Job Placement Support</li>
+                        <li><i class="fas fa-check"></i> Course duration: 4 months</li>
+                        <li><i class="fas fa-check"></i> 26+ Live Classes</li>
+                        <li><i class="fas fa-check"></i> Total 78 Hours</li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <!-- Card: Beach -->
-            <div class="discussion-section">
-                <div class="discussion-card">
-                    <div class="discussion-flip-card">
-                        <div class="discussion-flip-card__container">
-                            <div class="discussion-card-front">
-                                <div class="discussion-card-front__tp discussion-card-front__tp--beach">
-                                    <i style="      
-                                            color:#FF0000;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;"
-                                        class="fa fontawesome-icon fa-users circle-yes discussion-icon"></i>
-
-
-
-                                    <h2 class="discussion-card-front__heading">
-                                        JAPANESE CULTURE
-                                    </h2>
-                                </div>
-
-                                <div class="discussion-card-front__bt">
-                                    <p class="discussion-card-front__text-view discussion-card-front__text-view--beach">
-                                        View me
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="discussion-card-back">
-                                <video class="video__container" autoplay muted loop>
-                                    <source class="video__media"
-                                        src="https://player.vimeo.com/external/332588783.sd.mp4?s=cab1817146dd72daa6346a1583cc1ec4d9e677c7&profile_id=139&oauth2_token_id=57447761"
-                                        type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            <h3 class="inside-page__heading inside-page__heading--beach">
-                                For sun lovers
-                            </h3>
-                            <p class="inside-page__text">
-                                Relax and get sun-kissed tan in the sea or take up surfting for an adventure!
-                            </p>
-                            <a href="#" class="inside-page__btn inside-page__btn--beach">View deals</a>
-                        </div>
-                    </div>
+        <!-- Card for Level N2 -->
+        <div class="course_card" data-level="N2">
+            <div class="course_leftSide">
+                <label>COURSE</label>
+                <h3>Japanese Level N2</h3>
+                <div class="course_btn" onclick="openPopup('N2')">
+                    <a>View all chapters</a>
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9 8.5L1.74631 16L1 15.2283L7.50739 8.5L1 1.77172L1.74631 1L9 8.5Z" fill="white"
+                            stroke="#ADA5FF" />
+                    </svg>
                 </div>
             </div>
+            <div class="course_rightSide">
+                <div class="course_title">
+                    <h3>Intermediate Grammar & Vocabulary</h3>
+                </div>
+                <div class="course_features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Tools, templates, and book suggestions</li>
+                        <li><i class="fas fa-check"></i> Online and Offline Support</li>
+                        <li><i class="fas fa-check"></i> Recorded video lessons</li>
+                        <li><i class="fas fa-check"></i> Assessment and Certificate</li>
+                        <li><i class="fas fa-check"></i> Job Placement Support</li>
+                        <li><i class="fas fa-check"></i> Course duration: 4 months</li>
+                        <li><i class="fas fa-check"></i> 26+ Live Classes</li>
+                        <li><i class="fas fa-check"></i> Total 78 Hours</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+        <!-- Card for Level N3 -->
+        <div class="course_card" data-level="N3">
+            <div class="course_leftSide">
+                <label>COURSE</label>
+                <h3>Japanese Level N3</h3>
+                <div class="course_btn" onclick="openPopup('N3')">
+                    <a>View all chapters</a>
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9 8.5L1.74631 16L1 15.2283L7.50739 8.5L1 1.77172L1.74631 1L9 8.5Z" fill="white"
+                            stroke="#ADA5FF" />
+                    </svg>
+                </div>
+            </div>
+            <div class="course_rightSide">
+                <div class="course_title">
+                    <h3>Basic Grammar & Vocabulary</h3>
+                </div>
+                <div class="course_features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Tools, templates, and book suggestions</li>
+                        <li><i class="fas fa-check"></i> Online and Offline Support</li>
+                        <li><i class="fas fa-check"></i> Recorded video lessons</li>
+                        <li><i class="fas fa-check"></i> Assessment and Certificate</li>
+                        <li><i class="fas fa-check"></i> Job Placement Support</li>
+                        <li><i class="fas fa-check"></i> Course duration: 4 months</li>
+                        <li><i class="fas fa-check"></i> 26+ Live Classes</li>
+                        <li><i class="fas fa-check"></i> Total 78 Hours</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+        <!-- Card for Level N4 -->
+        <div class="course_card" data-level="N4">
+            <div class="course_leftSide">
+                <label>COURSE</label>
+                <h3>Japanese Level N4</h3>
+                <div class="course_btn" onclick="openPopup('N4')">
+                    <a>View all chapters</a>
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9 8.5L1.74631 16L1 15.2283L7.50739 8.5L1 1.77172L1.74631 1L9 8.5Z" fill="white"
+                            stroke="#ADA5FF" />
+                    </svg>
+                </div>
+            </div>
+            <div class="course_rightSide">
+                <div class="course_title">
+                    <h3>Basic Grammar & Kanji</h3>
+                </div>
+                <div class="course_features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Tools, templates, and book suggestions</li>
+                        <li><i class="fas fa-check"></i> Online and Offline Support</li>
+                        <li><i class="fas fa-check"></i> Recorded video lessons</li>
+                        <li><i class="fas fa-check"></i> Assessment and Certificate</li>
+                        <li><i class="fas fa-check"></i> Job Placement Support</li>
+                        <li><i class="fas fa-check"></i> Course duration: 4 months</li>
+                        <li><i class="fas fa-check"></i> 26+ Live Classes</li>
+                        <li><i class="fas fa-check"></i> Total 78 Hours</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card for Level N5 -->
+        <div class="course_card" data-level="N5">
+            <div class="course_leftSide">
+                <label>COURSE</label>
+                <h3>Japanese Level N5</h3>
+                <div class="course_btn" onclick="openPopup('N5')">
+                    <a>View all chapters</a>
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9 8.5L1.74631 16L1 15.2283L7.50739 8.5L1 1.77172L1.74631 1L9 8.5Z" fill="white"
+                            stroke="#ADA5FF" />
+                    </svg>
+                </div>
+            </div>
+            <div class="course_rightSide">
+                <div class="course_title">
+                    <h3>Introductory Grammar & Vocabulary</h3>
+                </div>
+                <div class="course_features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Tools, templates, and book suggestions</li>
+                        <li><i class="fas fa-check"></i> Online and Offline Support</li>
+                        <li><i class="fas fa-check"></i> Recorded video lessons</li>
+                        <li><i class="fas fa-check"></i> Assessment and Certificate</li>
+                        <li><i class="fas fa-check"></i> Job Placement Support</li>
+                        <li><i class="fas fa-check"></i> Course duration: 4 months</li>
+                        <li><i class="fas fa-check"></i> 26+ Live Classes</li>
+                        <li><i class="fas fa-check"></i> Total 78 Hours</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Popup Structure -->
+        <div id="popup" class="course_popup-overlay" onclick="closePopup()">
+            <div class="course_popup-content" onclick="event.stopPropagation()">
+                <h3>All Chapters for <span id="popup-level"></span></h3>
+                <ul id="chapter-list">
+                </ul>
+                <button onclick="closePopup()">Close</button>
+            </div>
         </div>
     </section>
+
+
+    <script>
+        const chapters = {
+            N1: ["Kanji Mastery", "Advanced Grammar", "Reading Comprehension", "Listening Practice", "Essay Writing"],
+            N2: ["Grammar & Structure", "Kanji Recognition", "Vocabulary Expansion", "Listening Skills"],
+            N3: ["Intermediate Grammar", "Reading Skills", "Kanji Essentials", "Conversation Practice"],
+            N4: ["Basic Grammar", "Intro to Kanji", "Reading Practice", "Listening Basics"],
+            N5: ["Foundational Vocabulary", "Basic Phrases", "Writing Basics", "Listening Practice"]
+        };
+
+        function openPopup(level) {
+            document.getElementById("popup-level").innerText = level;
+            const chapterList = document.getElementById("chapter-list");
+            chapterList.innerHTML = chapters[level].map(chapter => `<li>${chapter}</li>`).join("");
+            document.getElementById("popup").classList.add("active");
+        }
+        function closePopup() {
+            document.getElementById("popup").classList.remove("active");
+        }
+
+    </script>
 
 </body>
 

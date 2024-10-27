@@ -10,7 +10,8 @@
 .discussion {
     font-size: 62.5%;
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
+    margin-top: -90px;
 }
 
 .discussion::after,
@@ -344,15 +345,17 @@
 }
 
 
+
 /* Media Query */
 @media (min-width: 320px) and (max-width: 699px) {
     .discussion {
-        margin-top: 20px;
+        margin-top: -60px;
     }
 
     .discussion-area {
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
 
     .discussion-icon {
@@ -421,8 +424,7 @@
 
 @media (min-width: 700px) and (max-width: 1024px) {
     .discussion {
-        margin-top: 20px;
-        height: 50vh;
+        margin-top: -60px;
     }
 
     .discussion-icon {
@@ -491,8 +493,7 @@
 
 @media (min-width: 1025px) and (max-width: 1300px) {
     .discussion {
-        margin-top: 20px;
-        height: 50vh;
+        margin-top: -60px;
     }
 
     .discussion-icon {
