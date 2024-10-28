@@ -257,7 +257,7 @@
     padding-top: 20px;
 }
 
-.appointment-btn>button {
+.appointment-link > button {
     background-color: #fff;
     padding: 20px 35px;
     border-radius: 25px;
