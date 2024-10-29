@@ -46,7 +46,7 @@
 
 .hero-title {
     color: red !important;
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: bolder;
 }
 
@@ -57,8 +57,10 @@
 
 .heropanel__content h1 {
     margin: 0 0 .5em;
-    text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 5rem;
+}
+.bd{
+    color: #ff0000;
 }
 
 .heropanel__content h1 a {
