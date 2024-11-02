@@ -24,6 +24,11 @@
     box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
 }
 
+.affiliates-tag-list li a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
 .affiliates-aff-img {
     height: 100px;
 }
