@@ -364,10 +364,13 @@
                     Japan and processes Japanese Visa.</p>
             </div>
             <div class="footer-column">
-                <h3>Study Link</h3>
-                <p><i class="fas fa-map-marker-alt"></i> House-620-22, Road 09, Mirpur DOHS, Dhaka 1216</p>
-                <p><i class="fas fa-phone"></i> +880 19 9488 4302</p>
-                <p><i class="fas fa-envelope"></i> matservicesbd@gmail.com</p>
+                <h3>Our Office Branches</h3>
+                <div class="office-branches">
+                    <button onclick="showBranch('Dhaka')" class="branch-button">Dhaka Office</button>
+                    <button onclick="showBranch('Chattogram')" class="branch-button">Chattogram Office</button>
+                    <button onclick="showBranch('Japan')" class="branch-button">Japan Office</button>
+                </div>
+                <div id="office-contact-info" class="contact-box branch-contact-info"></div>
             </div>
             <div class="footer-column">
                 <h3>Find Us Online</h3>
@@ -407,6 +410,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/blog.js"></script>
+    <script src="./js/branch.js"></script>
 
 
 

@@ -23,17 +23,17 @@
     <header class="header">
         <nav class="nav overlay">
             <div class="nav__logo">
-                <a href="#">MAT Japanese Language Academy</a>
+                <a href="./index.html">MAT Japanese Language Academy</a>
             </div>
             <div id="mainListDiv" class="main_list nav__wrapper">
                 <ul class="navlinks nav__wrapper__list">
                     <!-- <li class="nav__wrapper__list__item "><a href="#check">Study in Japan</a></li>
                     <li class="nav__wrapper__list__item "><a href="#">Japanese Language</a></li> -->
-                    <li class="nav__wrapper__list__item "><a href="#discussion">About Us</a></li>
-                    <li class="nav__wrapper__list__item "><a href="#">Blog</a></li>
-                    <li class="nav__wrapper__list__item "><a href="#">Services</a></li>
-                    <li class="nav__wrapper__list__item "><a href="#">Contact Us</a></li>
-                    <li class="nav__wrapper__list__item signin"><a href="#">Signin</a></li>
+                    <li class="nav__wrapper__list__item "><a href="./about_us.html">About Us</a></li>
+                    <li class="nav__wrapper__list__item "><a href="./blog.html">Blog</a></li>
+                    <li class="nav__wrapper__list__item "><a href="./services.html">Services</a></li>
+                    <li class="nav__wrapper__list__item "><a href="./contact.html">Contact Us</a></li>
+                    <li class="nav__wrapper__list__item signin"><a href="./signin.html">Signin</a></li>
                 </ul>
             </div>
             <span class="navTrigger nav__toggle-btn">
@@ -47,7 +47,7 @@
     <main>
         <article>
             <section class="about_hero">
-                <h1 class="about_hero-title">About Us</h1>
+                <h1 class="about_hero-title">Signin</h1>
 
             </section>
             <p style="height: 2000px;"></p>
@@ -66,10 +66,13 @@
                     Japan and processes Japanese Visa.</p>
             </div>
             <div class="footer-column">
-                <h3>Study Link</h3>
-                <p><i class="fas fa-map-marker-alt"></i> House-620-22, Road 09, Mirpur DOHS, Dhaka 1216</p>
-                <p><i class="fas fa-phone"></i> +880 19 9488 4302</p>
-                <p><i class="fas fa-envelope"></i> matservicesbd@gmail.com</p>
+                <h3>Our Office Branches</h3>
+                <div class="office-branches">
+                    <button onclick="showBranch('Dhaka')" class="branch-button">Dhaka Office</button>
+                    <button onclick="showBranch('Chattogram')" class="branch-button">Chattogram Office</button>
+                    <button onclick="showBranch('Japan')" class="branch-button">Japan Office</button>
+                </div>
+                <div id="office-contact-info" class="contact-box branch-contact-info"></div>
             </div>
             <div class="footer-column">
                 <h3>Find Us Online</h3>
@@ -108,6 +111,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/branch.js"></script>
 
 
 </body>

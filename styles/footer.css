@@ -85,6 +85,28 @@
     color: red;
 }
 
+.footer-column:nth-child(2) {
+    order: 3;
+}
+
+.footer-column:nth-child(3) {
+    order: 2;
+}
+
+.branch-button {
+    font-size: 12px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.branch-button.active {
+    background-color: red;
+    color: #ffffff;
+}
+
+
 .footer-column:nth-child(2) p {
     position: relative;
 }
