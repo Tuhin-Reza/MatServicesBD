@@ -6,13 +6,13 @@ const branchDetails = {
     },
     "Chattogram": {
         address: "Mim Villa, 40/A, Katalganj Residential Area, Road No-4, Panchlaish, Chittagong",
-        phone: "+880 19 9488 4302",
+        phone: "+880 18 1933 1429",
         email: "matservicesbd@gmail.com"
     },
     "Japan": {
         address: "JP office: 1-8-23-203 Maizuru, Chuo ku, Fukuoka 810-0073 Japan",
         phone: "+81 92 123 4567",
-        email: "matservicesbd.jp@gmail.com"
+        email: "matservicesbd@gmail.com"
     }
 };
 
