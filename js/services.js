@@ -1,6 +1,7 @@
 function showServiceSection() {
     const urlParams = new URLSearchParams(window.location.search);
     const service = urlParams.get('service');
+    console.log("URL Parameter 'service':", service); // Debugging
 
     const buttons = document.querySelectorAll('.service-btn');
     const details = document.querySelectorAll('.service-details');
